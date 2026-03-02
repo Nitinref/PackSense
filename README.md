@@ -1,6 +1,6 @@
 # 🚀 PackSense — AI-Powered Package Setup for VS Code
 
-> Never get outdated setup instructions again. PackSense verifies package versions in real-time and auto-sets up your project using AI.
+> Stop wasting time on outdated docs. PackSense fetches real-time package versions from official registries, detects breaking changes, and lets AI set up your entire project automatically — all without leaving VS Code.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 ![Build Passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
@@ -22,12 +22,42 @@ When developers ask AI tools like ChatGPT or Claude how to set up a package (e.g
 
 ## ✨ Features
 
-- 📦 **Auto package.json scanner** — detects all installed packages and versions on project open
-- 🌐 **Real-time version check** — fetches latest versions from the official npm Registry API
-- 📋 **GitHub release notes** — pulls breaking changes and migration guides automatically
-- 🤖 **AI Chat Panel** — built directly inside VS Code, no external website needed
-- ⚡ **Auto Setup** — runs terminal commands and creates config files automatically
-- ✅ **Confirmation Popup** — always asks before touching your files or running commands
+### 🔍 Smart Package Search
+- Type any library name — PackSense searches **all major registries simultaneously** in real-time
+- Fuzzy matching support — `langchin` → finds `langchain` automatically
+- Shows latest version, release date, weekly downloads across ecosystems
+
+### 📡 Multi-Registry Real-Time APIs
+
+| Language | Registry | What's Fetched |
+|----------|----------|----------------|
+| 🐍 Python | PyPI | Latest version, dependencies |
+| 📦 JavaScript | npm | Latest version, changelog |
+| 🦀 Rust | Crates.io | Latest stable release |
+| 🎯 Dart/Flutter | pub.dev | Latest version, compatibility |
+| 💎 Ruby | RubyGems | Latest gem version |
+| ☕ Java | Maven Central | Latest artifact |
+| 🐙 All | GitHub Releases | Breaking changes, migration guide |
+
+### 📋 What's New — Breaking Changes Alert
+- Fetches official GitHub release notes in real-time
+- AI summarizes what changed in simple language
+- Warns about breaking changes before you upgrade
+
+### 🤖 AI Chat Panel (Inside VS Code)
+- Ask anything about any package — AI answers using **verified real-time data**
+- No outdated training data — every response backed by official API results
+- Explains concepts, migration steps, and best practices
+
+### ⚡ Auto Setup — One Click Project Config
+- Generates correct install command for your ecosystem (`pip install` / `npm install`)
+- Creates boilerplate starter code with latest syntax
+- Auto-generates config files — `.env`, `requirements.txt`, `schema.prisma`, etc.
+- Runs everything in terminal with your confirmation
+
+### ✅ Confirmation Popup — Always In Control
+- Shows exactly what will be run before executing anything
+- Never touches your files without explicit permission
 
 ---
 
@@ -36,7 +66,7 @@ When developers ask AI tools like ChatGPT or Claude how to set up a package (e.g
 ### 📸 System Design Diagram
 
 <p align="center">
-  <img src="./Screenshot 2026-03-02 125744.png" alt="PackSense System Design" width="650"/>
+  <img src="./Screenshot 2026-03-02 142741.png" alt="PackSense System Design" width="650"/>
 </p>
 
 ### 📝 Flow Breakdown
@@ -234,4 +264,4 @@ MIT License — free to use, modify, and distribute.
 
 ---
 
-> Built with ❤️ to make developers' lives easier. No more outdated setup headaches.# PackSense
+> Built with ❤️ to make developers' lives easier. No more outdated setup headaches.
