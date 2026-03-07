@@ -66,7 +66,7 @@ When developers ask AI tools like ChatGPT or Claude how to set up a package (e.g
 ### 📸 System Design Diagram
 
 <p align="center">
-  <img src="./Screenshot 2026-03-02 233653.png" alt="PackSense System Design" width="950"/>
+  <img src="./Screenshot 2026-03-07 233653.png" alt="PackSense System Design" width="950"/>
 </p>
 
 ### 📝 Flow Breakdown
